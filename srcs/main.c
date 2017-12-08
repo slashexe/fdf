@@ -35,13 +35,11 @@ int			main(int argc, char **argv)
 
 
 
-	e->mlx = mlx_int();
-	e->win = mlx_new_window(e.mlx, 1000, 1000, "fdf");
+	
 	mlx_expose_hook(e->win, expose_hook, &e);
 	mlx_key_hook(e->win, my_key_func, e->mlx);
-
+	
 	draw(e);
-
 	mlx_loop(e->mlx);
 	return (0);
 }
