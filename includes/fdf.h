@@ -25,6 +25,7 @@ typedef struct		s_mat
 	double			y;
 	double			z;
 	struct s_mat	*next;
+	char			end;
 
 }					t_mat;
 

@@ -15,12 +15,12 @@
 
 void	end_point(t_env *e)
 {
-	t_m3	*p;
+	t_mat	*mat;
 
-	p = e->p;
-	while (p->next != NULL)
-		p = p->next;
-	p->end = 1;
+	mat = e->matrice;
+	while (mat->next != NULL)
+		mat = mat->next;
+	mat->end = 1;
 }
 
 void	read_point(char **line, t_env *e, int *x, int y)
